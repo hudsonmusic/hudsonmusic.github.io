@@ -1,0 +1,171 @@
+/* my portfolio styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  color: #222;
+}
+
+/* nav bar */
+header.site {
+  background-color: #782f40;
+  padding: 10px 20px;
+}
+.brand {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav {
+  display: inline;
+}
+nav ul {
+  list-style: none;
+  display: inline;
+  padding: 0;
+  margin: 0 0 0 30px;
+}
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav a.active {
+  text-decoration: underline;
+}
+.menu-btn {
+  display: none;
+}
+
+/* main content */
+main {
+  width: 800px;
+  max-width: 95%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  color: #782f40;
+  text-align: center;
+}
+h2 {
+  color: #782f40;
+  border-bottom: 2px solid #ceb888;
+}
+h3 {
+  color: #333;
+}
+
+.hero, .page-head {
+  text-align: center;
+}
+.eyebrow {
+  color: gray;
+}
+.rule {
+  display: none;
+}
+
+.photo {
+  float: right;
+  width: 180px;
+  height: 220px;
+  margin: 0 0 10px 20px;
+  background-color: #ddd;
+  text-align: center;
+  font-size: 13px;
+}
+.photo img {
+  width: 180px;
+  height: 220px;
+}
+.about::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* the 3 boxes */
+.cards {
+  text-align: center;
+}
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 210px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+.card .num {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #782f40;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #5a2230;
+}
+
+.panel {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #fafafa;
+}
+
+.numbered .n {
+  display: none;
+}
+
+form.contact input, form.contact textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+form.contact textarea {
+  height: 100px;
+}
+
+footer.site {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+  padding: 20px;
+}
+footer.site .links a {
+  margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+  .photo {
+    float: none;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+}
